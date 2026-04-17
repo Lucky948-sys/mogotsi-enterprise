@@ -1,24 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mogotsi's Diner - Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Mogotsi's Diner</h1>
-    </header>
+  <header class="site-header">
+    <div class="container header-top">
+      <div class="logo">Logo</div>
+      <div class="header-title">Mogotsi's Diner</div>
+      <div class="burger" aria-hidden="true">
+        <div class="burger-lines">
+          <div class="burger-mid"></div>
+        </div>
+      </div>
+    </div>
 
-    <main>
-        <p>This is Mogotsi's Diner official webpage.</p>
-        
-        <p>Savour Every Moment</p>
-    </main>
+    <nav class="nav container" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="#">Contact<br/>Us</a>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2026 Mogotsi Enterprises</p>
-    </footer>
+  <main class="page">
+    <div class="container">
+      <h1 class="page-title" style="text-align:center;">Welcome To Mogotsi's Diner</h1>
 
+      <div class="hero-card">
+        <div class="image-placeholder">Image</div>
+      </div>
+
+      <div class="hero-cta-wrap">
+        <div class="subtext" style="color:#111827;font-size:16px;font-weight:600;">
+          Comfort you can taste!!!
+        </div>
+        <button class="primary-btn" onclick="location.href='gallery.html'">
+          VIEW GALLERY
+        </button>
+      </div>
+    </div>
+
+    <div class="section-title">POPULAR MEALS</div>
+
+    <div class="popular-grid container">
+      <div class="meal">
+        <div class="meal-circle">
+          <div class="image-placeholder" style="width:90px;height:60px;border-radius:4px;font-size:11px;">
+            Img
+          </div>
+        </div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line sm"></div>
+      </div>
+
+      <div class="meal">
+        <div class="meal-circle">
+          <div class="image-placeholder" style="width:90px;height:60px;border-radius:4px;font-size:11px;">
+            Img
+          </div>
+        </div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line sm"></div>
+      </div>
+
+      <div class="meal">
+        <div class="meal-circle">
+          <div class="image-placeholder" style="width:90px;height:60px;border-radius:4px;font-size:11px;">
+            Img
+          </div>
+        </div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line sm"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    2026 Mogotsi Diner
+  </footer>
 </body>
 </html>
